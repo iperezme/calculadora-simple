@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/lblTitle"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/lblTitle"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_toLeftOf="@+id/editText3"
+        android:text="@string/lblValue1"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText3"
+        android:layout_marginTop="16dp"
+        android:layout_toRightOf="@+id/lblValue1"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/lblValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtValue2"
+        android:layout_toLeftOf="@+id/txtValue2"
+        android:text="@string/lblValue2"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lblValue2"
+        android:layout_below="@+id/lblValue2"
+        android:layout_marginTop="15dp"
+        android:text="@string/btnMinus" />
+
+    <Button
+        android:id="@+id/btnMultiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMinus"
+        android:layout_alignBottom="@+id/btnMinus"
+        android:layout_toRightOf="@+id/btnMinus"
+        android:text="@string/btnMultiple" />
+
+    <Button
+        android:id="@+id/btnSum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnMultiple"
+        android:layout_alignBottom="@+id/btnMultiple"
+        android:layout_toRightOf="@+id/btnMultiple"
+        android:text="@string/btnSum" />
+
+    <Button
+        android:id="@+id/btnDivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSum"
+        android:layout_alignBottom="@+id/btnSum"
+        android:layout_toRightOf="@+id/btnSum"
+        android:text="@string/btnDivide" />
+
+    <TextView
+        android:id="@+id/lblResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnMinus"
+        android:layout_below="@+id/btnMinus"
+        android:layout_marginTop="29dp"
+        android:text="@string/lblResult"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblResult"
+        android:layout_alignBottom="@+id/lblResult"
+        android:layout_alignLeft="@+id/txtValue2"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
